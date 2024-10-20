@@ -8,7 +8,13 @@ export default {
     extend: {},
     colors:{
       primary:'#3238f2',
-      gray: '#E8E8E8'
+      gray: '#E8E8E8',
+      white: 'white',
+      fontColor: '#2f3033'
+    },
+    fontFamily:{
+      display: ["Poppins", "Sans-serif"],
+      body: ["Inter","Sans-serif" ]
     }
   },
   plugins: [],

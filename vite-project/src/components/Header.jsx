@@ -10,13 +10,13 @@ console.log(toggleNavBar)
   return (
   //------------------------------------------------------------ Header for normal screen -------------------------------------------------
     <header className="flex justify-between items-center p-3 relative border-2">
-    <div className="flex justify-between items-center gap-2 z-0" >
+    <div className="flex justify-between items-center gap-2 z-30" >
         <img className=" object-cover max-w-12 max-h-20" src={logo} alt="Logo" />
         <p className="text-lg font-medium">ToDesktop</p>
     </div>
 
       <nav>
-        <ul className=" hidden lg:flex gap-10 cursor-pointer">
+        <ul className=" hidden lg:flex gap-16 cursor-pointer">
           <li> <a className="text-xl font-semibold hover:text-primary" href="#">Pricing</a> </li>
           <li> <a className="text-xl font-semibold  hover:text-primary" href="#">Docs</a> </li>
           <li><a className="text-xl font-semibold   hover:text-primary" href="#">ChangeLog</a></li>
@@ -33,14 +33,14 @@ console.log(toggleNavBar)
 
 {/*------------------------------------------------------ For Mobile responsiveness ------------------------------------------------------ */}
 {/* Jesy hi Lg point hit hoga yah button hide hogy ga yaad rahy button ky andar humberger and cross wala icon hay.  */}
-<button className="lg:hidden z-20"
+<button className="lg:hidden z-30"
 onClick={()=>settoggleNavBar(!toggleNavBar)}>{toggleNavBar ? <ImCross /> : <div> <FaAlignJustify /></div>}
 </button>
-{toggleNavBar && <div className="absolute left-0 right-0 top-0 h-screen bg-white">
+{toggleNavBar && <div className="absolute left-0 right-0 top-0 h-screen bg-white z-20">
 
   <nav className="pb-4 ml-4 mr-4">
         <ul className="flex flex-col mt-20 cursor-pointer">
-          <li className="py-2 "> <a className="text-xl font-semibold  hover:bg-gray block rounded-md p-1" href="#">Pricing</a> </li>
+          <li className="py-2 "> <a className="text-xl font-semibold hover:bg-gray block rounded-md p-1" href="#">Pricing</a> </li>
           <li className="py-2"> <a className="text-xl font-semibold  hover:bg-gray block rounded-md p-1" href="#">Docs</a> </li>
           <li className="py-2"><a className="text-xl font-semibold   hover:bg-gray block rounded-md p-1" href="#">ChangeLog</a></li>
           <li className="py-2"><a className="text-xl font-semibold   hover:bg-gray block rounded-md p-1" href="#">Blog</a></li>
