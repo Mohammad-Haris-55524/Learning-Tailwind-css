@@ -9,28 +9,29 @@ console.log(toggleNavBar)
 
   return (
   //------------------------------------------------------------ Header for normal screen -------------------------------------------------
-    <header className="flex justify-between items-center p-3 relative border-2">
-    <div className="flex justify-between items-center gap-2 z-30" >
-        <img className=" object-cover max-w-12 max-h-20" src={logo} alt="Logo" />
-        <p className="text-lg font-medium">ToDesktop</p>
+    <header className="flex justify-between items-center p-4 relative ">
+    <div className="flex items-center gap-2 z-30 lg:flex-1" >
+        <img className="w-12 h-12 object-cover lg:w-16 lg:h-16" src={logo} alt="Logo" />
+        <p className="sm:text-xl lg:text-2xl font-semibold">ToDesktop</p>
     </div>
 
       <nav>
         <ul className=" hidden lg:flex gap-16 cursor-pointer">
-          <li> <a className="text-xl font-semibold hover:text-primary" href="#">Pricing</a> </li>
-          <li> <a className="text-xl font-semibold  hover:text-primary" href="#">Docs</a> </li>
-          <li><a className="text-xl font-semibold   hover:text-primary" href="#">ChangeLog</a></li>
-          <li><a className="text-xl font-semibold   hover:text-primary" href="#">Blog</a></li>
-          <li><a  className="text-xl font-semibold  hover:text-primary"href="#">Login</a></li>
+          <li> <a className="sm:text-xl font-semibold hover:text-primary" href="#">Pricing</a> </li>
+          <li> <a className="sm:text-xl font-semibold hover:text-primary" href="#">Docs</a> </li>
+          <li><a className="sm:text-xl font-semibold  hover:text-primary" href="#">ChangeLog</a></li>
+          <li><a className="sm:text-xl font-semibold  hover:text-primary" href="#">Blog</a></li>
+          <li><a className="sm:text-xl font-semibold  hover:text-primary"href="#">Login</a></li>
         </ul>
       </nav>
 
-<button className="hidden lg:flex items-center gap-2 border border-gray-400 px-4 py-2 text-xl font-semibold rounded-lg hover:border-gray-600" >
-        <img src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="Electron-image" />
+<div className="hidden lg:flex items-center lg:flex-1 justify-end">
+<button className=" lg:flex items-center border border-gray-400 gap-3 px-4 py-3 text-lg font-semibold rounded-lg hover:border-gray-600" >
+        <img className="w-6" src="https://www.todesktop.com/_app/immutable/assets/electron-icon.E8mrXtZM.svg" alt="Electron-image" />
         <span>Electron Developer</span>
-        <div> <GoArrowRight /></div>
+        <div className="text-2xl"><GoArrowRight/></div>
       </button>
-
+</div>
 {/*------------------------------------------------------ For Mobile responsiveness ------------------------------------------------------ */}
 {/* Jesy hi Lg point hit hoga yah button hide hogy ga yaad rahy button ky andar humberger and cross wala icon hay.  */}
 <button className="lg:hidden z-30"
