@@ -7,7 +7,7 @@ import { GoArrowRight } from "react-icons/go";
 
 function Home() {
   return (
-    <section className='min-h-screen bg-[#F2F0FF] border-2'> 
+    <section className='min-h-screen bg-[#F2F0FF]'> 
     {/* HERO CONTAINER */}
     <div className='p-6 sm:flex flex-col max-w-4xl mx-auto items-center sm:p-12'>
     
