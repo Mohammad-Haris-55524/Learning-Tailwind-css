@@ -2,9 +2,9 @@ import React from 'react'
 import bgImage from '../assets/nextImage01.jpg'
 import insideImage from '../assets/nextImage02.png'
 
-function AnotherSlider() {
+function NormalPage() {
   return (
-    <section className='px-6 pb-12 pt-[4.5rem] sm:px-9 sm:pt-[6.6rem] sm:pb-20'>
+    <section className='px-6 pb-12 pt-[4.5rem] sm:px-9 sm:pt-[6.6rem] sm:pb-20 border-2'>
         <div className='relative flex justify-center items-center'>
             <div className='border border-gray rounded-2xl'>
                 <img className="rounded-2xl" src={bgImage} alt="" />
@@ -21,7 +21,7 @@ function AnotherSlider() {
   )
 }
 
-export default AnotherSlider
+export default NormalPage;
 
 
 

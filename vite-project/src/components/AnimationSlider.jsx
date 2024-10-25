@@ -30,7 +30,7 @@ import image27 from '../assets/image27.png'
 import image28 from '../assets/image28.png'
 
 
-function Slider() {
+function AnimationSlider() {
 
     const [isVisible, setIsVisible] = useState(false);
     const [row1Translate, setRow1Translate] = useState(0);
@@ -384,4 +384,4 @@ function Slider() {
   );
 }
 
-export default Slider;
+export default AnimationSlider;
