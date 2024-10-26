@@ -4,7 +4,7 @@ import insideImage from '../assets/nextImage02.png'
 
 function NormalPage() {
   return (
-    <section className='px-6 pb-12 pt-[4.5rem] sm:px-9 sm:pt-[6.6rem] sm:pb-20 border-2'>
+    <section className='px-6 pb-12 pt-[4.5rem] sm:px-9 sm:pt-[6.6rem] sm:pb-20'>
         <div className='relative flex justify-center items-center'>
             <div className='border border-gray rounded-2xl'>
                 <img className="rounded-2xl" src={bgImage} alt="" />
