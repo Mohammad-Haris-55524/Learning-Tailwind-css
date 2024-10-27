@@ -7,7 +7,8 @@ import HowItWorks from './components/HowItWorks'
 import image1 from "./assets/HowItWorks01.svg"
 import AnimationSlider from './components/AnimationSlider'
 import NormalPage from './components/NormalPage'
-import CustomerStories from './components/CustomerStories';
+import CustomerStories from './components/CustomerStories'
+import CardsOfCustomerStories from './components/CardsOfCustomerStories';
 
 function App() {
 
@@ -25,8 +26,8 @@ return (
 <AnimationSlider toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
 <NormalPage/>
 
-<main className="">
-<h1 className=" px-6 lg:px-8 xl:px-8  text-5xl font-semibold mt-10 sm:mt-14 mb-14 ">How it works</h1>
+<main className="px-6 sm:px-6 lg:px-8 xl:px-8 mb-12">
+<h1 className=" text-5xl font-bold mt-10 sm:mt-14 mb-14 ">How it works</h1>
 
 <HowItWorks step = "step 1"
 title = "Bootstrap straight from your web app"
@@ -77,8 +78,15 @@ featuresRight = {[
   "Native installers for all platforms"
 ]}
 />
-</main>
+<h1 className='text-5xl font-bold mt-10 sm:mt-14 mb-14'>Customer stories</h1>
 <CustomerStories/>
+
+<div className='flex justify-between border-4'>
+<CardsOfCustomerStories/>
+<CardsOfCustomerStories/>
+<CardsOfCustomerStories/>
+</div>
+</main>
 </div>
   )
 }
