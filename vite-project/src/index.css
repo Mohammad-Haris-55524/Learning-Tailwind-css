@@ -8,4 +8,15 @@
     body{
         @apply font-body
     }
+    .border-bottom-hover{
+        @apply border-b border-dotted border-y-gray-300 hover:border-solid hover:border-gray-500;
+    }
+    .font-styling-for-customer-stories{
+        @apply text-[1.5rem] lg:text-[1.35rem] font-bold mt-8 mb-8
+    }
+
+    .font-styling-for-customer-stories-2{
+        @apply text-[1.7rem] lg:text-[2.8rem] leading-tight font-bold mt-2 mb-4 text-white
+    }
+
 }

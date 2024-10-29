@@ -10,6 +10,8 @@ theme: {
     colors:{
       secondary:'#3238f2',
       gray: '#E8E8E8',
+      ashGray: '#B2BEB5',
+      darkGrey: '#808080',
       white: 'white',
       fontColor: '#2f3033',
       yellow: '#facc15',
