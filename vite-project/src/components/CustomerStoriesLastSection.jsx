@@ -14,6 +14,8 @@ function CustomerStoriesLastSection() {
 conditionalClass = 'font-styling-for-customer-stories-2'
 bgColor='bg-color-black-class'
 fontColor = {false}
+imageClass= {"custom-styling-for-right-side-image-customer-stories-2"}
+
 />
 </div>
     </>

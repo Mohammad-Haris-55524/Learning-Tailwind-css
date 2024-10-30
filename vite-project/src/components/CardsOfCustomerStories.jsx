@@ -1,18 +1,18 @@
 import React from "react";
 import { IoCodeSlashOutline } from "react-icons/io5";
 
-
-
 function CardsOfCustomerStories({iconBgColorCode,  title, description, customerName, customerWebisteName, cardLogoImages, customerStoriesImages,}) {
-  console.log(cardLogoImages, customerStoriesImages)
+  // console.log(cardLogoImages, customerStoriesImages)
+  console.log(iconBgColorCode)
   return (
-    <div className="flex flex-col justify-between border border-gray rounded-2xl w-[32.2%] p-10 bg-[#f7f4f4] mt-12">
-      <div>
-      <div className={`text-lg font-bold rounded-full object-cover w-12 h-12 flex justify-center items-center bg-[${iconBgColorCode}]`}>
+    <div className="flex flex-col justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] p-4 lg:p-10 bg-[#f7f4f4] mt-12">
+      <div className=" flex lg:flex-col gap-6">
+      <div style={{backgroundColor : `${iconBgColorCode}`}} 
+      className={`text-lg font-bold rounded-full object-cover w-12 h-12 flex justify-center items-center`}>
           <IoCodeSlashOutline />
        </div>
 
-      <div className="mt-5">
+      <div className="mt-2 lg:mt-5">
         <h1 className="text-2xl font-semibold">{title}</h1>
         <p className="mt-6 text-lg opacity-90">
         <span className="text-2xl opacity-30 -ml-6 p-2">“</span>
@@ -22,7 +22,7 @@ function CardsOfCustomerStories({iconBgColorCode,  title, description, customerN
       </div>
       </div>
 
-      <div className="mt-8 flex gap-4 items-center">
+      <div className="mt-4 lg:mt-8 flex gap-4 items-center">
        <div className="flex">
 
           <div className="w-12 h-12 rounded-full overflow-hidden flex justify-center items-center -mr-3">

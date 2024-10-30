@@ -14,9 +14,21 @@
     .font-styling-for-customer-stories{
         @apply text-[1.5rem] lg:text-[1.35rem] font-bold mt-8 mb-8
     }
-
+    .custom-styling-for-right-side-image-customer-stories{
+    @apply pl-7 lg:p-0 lg:px-0 justify-self-end self-end flex-grow max-w-lg 
+    }
     .font-styling-for-customer-stories-2{
         @apply text-[1.7rem] lg:text-[2.8rem] leading-tight font-bold mt-2 mb-4 text-white
     }
 
+    .custom-styling-for-right-side-image-customer-stories-2{
+        @apply pl-7 lg:p-0 lg:px-0 lg:max-w-full xl:max-w-3xl  absolute left-28 xl:top-10 xl:left-36 
+        /* border-4 border-secondary */
+    }
+    .icon-color{
+        
+    }
 }
+
+/* lg:self-end */
+/* absolute left-24 top-10   */

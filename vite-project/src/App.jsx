@@ -23,6 +23,7 @@ import cardCustomerImage2 from "./assets/customer stories/Max.V2rqrzg6.jpg";
 import cardCustomerImage3 from "./assets/customer stories/Pouya.Q0zAbZRS.jpg";
 import CustomerStoriesLastSection from './components/CustomerStoriesLastSection';
 import { FaS } from 'react-icons/fa6';
+import PricePlanPage01 from './components/PricePlanPage01';
 
 function App() {
 
@@ -107,19 +108,24 @@ featuresRight = {[
   conditionalClass = 'font-styling-for-customer-stories'
   bgColor = 'bg-color-grey-class'
   fontColor = {true}
+  imageClass= {"custom-styling-for-right-side-image-customer-stories"}
 
 />
-<div className='flex justify-between'>
+<div className='lg:flex justify-between'>
 <CardsOfCustomerStories iconBgColorCode= '#ccccff' title = 'Native APIs' description = "What sets ToDesktop apart is its seamless integration with native APIs using our existing web codebase. By tapping into APIs like Tray and Notifications, we've crafted an exceptionally polished desktop user experience." customerName = 'Rick Pastoor' customerWebisteName = 'Rise' cardLogoImages = {cardBodyImage1} customerStoriesImages = {cardCustomerImage1}/>
-<CardsOfCustomerStories iconBgColorCode= '#ccccff' title = 'Cleaner, less cluttered UI' description = "Having a desktop app gives us the freedom to design the experience we want, including better keyboard shortcuts and a cleaner UI. It was a no-brainer for us to use ToDesktop." customerName = 'Max Musing' customerWebisteName = 'Basedash' cardLogoImages = {cardBodyImage2} customerStoriesImages = {cardCustomerImage2}/>
-<CardsOfCustomerStories iconBgColorCode= '#ccccff' title = 'Code optional' description = "It was unbelievably simple for us to get a desktop app up and running, and we didn’t have to write a single line of code. Once we had this MVP, we were able to extend the app’s functionality with custom behavior using ToDesktop’s libraries." customerName = 'Pouya Rad' customerWebisteName = 'LifeAt' cardLogoImages = {cardBodyImage3} customerStoriesImages = {cardCustomerImage3}/>
+<CardsOfCustomerStories iconBgColorCode= '#ffcecc' title = 'Cleaner, less cluttered UI' description = "Having a desktop app gives us the freedom to design the experience we want, including better keyboard shortcuts and a cleaner UI. It was a no-brainer for us to use ToDesktop." customerName = 'Max Musing' customerWebisteName = 'Basedash' cardLogoImages = {cardBodyImage2} customerStoriesImages = {cardCustomerImage2}/>
+<CardsOfCustomerStories iconBgColorCode= '#fff6cc' title = 'Code optional' description = "It was unbelievably simple for us to get a desktop app up and running, and we didn’t have to write a single line of code. Once we had this MVP, we were able to extend the app’s functionality with custom behavior using ToDesktop’s libraries." customerName = 'Pouya Rad' customerWebisteName = 'LifeAt' cardLogoImages = {cardBodyImage3} customerStoriesImages = {cardCustomerImage3}/>
 </div>
 </section>
 
 <section className='mt-40'>
 <CustomerStoriesLastSection />
 </section>
+
+
+<PricePlanPage01 />
 </main>
+
 </div>
   )
 }

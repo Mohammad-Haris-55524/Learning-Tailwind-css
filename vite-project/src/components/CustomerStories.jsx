@@ -19,18 +19,19 @@ function CustomerStories({
   textBelowBtn,
   conditionalClass,
   bgColor,
-  fontColor
+  fontColor,
+  imageClass
 }) {
   console.log(bgColor);
   return (
     <>
-      <div className={`lg:flex justify-between rounded-xl max-w-full border border-gray pt-8 sm:pt-2 lg:pt-5 h-max 
+      <div className={`lg:flex justify-between rounded-xl max-w-full border border-gray pt-8 sm:pt-2 lg:pt-5 h-max overflow-hidden 
         ${
           bgColor === "bg-color-grey-class"
             ? "bg-[#faf2f2]"
             : "bg-[#000000]"
         }`}>
-        <div className="px-7 sm:p-8 lg:px-12 lg:max-w-2xl ">
+        <div className="px-7 sm:p-8 lg:px-12 lg:max-w-2xl">
           {topLogo && <img src={topLogo} alt="" />}
           {topText && <p className="text-md font-bold uppercase text-white opacity-80 mt-6">Ready to start building?</p>}
           <h1 className={`${conditionalClass}`}>
@@ -89,8 +90,8 @@ function CustomerStories({
         </div>
 
 {bgImage && 
-        <div className="pl-7 lg:p-0 lg:px-0 justify-self-end self-end flex-grow max-w-lg">
-          <img className="lg:max-w-lg" src={bgImage} alt="" />
+        <div className={`${imageClass} relative  `}>
+          <img className={`${fontColor ? 'lg:max-w-lg' :  'object-center lg:max-w-[100%] xl:max-w-2xl h-full' } `} src={bgImage} alt="" />
         </div>
 }
       </div>
