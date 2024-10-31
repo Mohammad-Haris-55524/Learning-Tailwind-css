@@ -28,6 +28,9 @@
     .icon-color{
         
     }
+    .class1{
+        @apply translate-x-44
+    }
 }
 
 /* lg:self-end */
