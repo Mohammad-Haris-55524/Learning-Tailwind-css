@@ -29,7 +29,13 @@
         
     }
     .class1{
-        @apply translate-x-44
+        @apply translate-x-40
+        /* @apply scale-95 */
+    }
+
+    .class2{
+        @apply -translate-x-12
+        /* @apply scale-95 */
     }
 }
 
