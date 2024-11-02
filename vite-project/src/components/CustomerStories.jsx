@@ -53,12 +53,7 @@ function CustomerStories({
                   </li>
                 );
               })}
-              {/*
-              <li className='flex flex-wrap gap-2 items-center rounded-lg px-3 py-1 text-sm text-[#713f12] font-bold  bg-[#fff6cc] border border-yellow text'><span  className='text-sm '><FaCheck/></span> Chromeless UI</li>
-                <li className='flex flex-wrap gap-2 items-center rounded-lg px-3 py-1 text-sm text-[#713f12] font-bold  bg-[#fff6cc] border border-yellow text'> <span className='text-sm '><FaCheck/></span> Native spellcheck</li>
-                <li className='flex flex-wrap gap-2 items-center rounded-lg px-3 py-1 text-sm text-[#713f12] font-bold  bg-[#fff6cc] border border-yellow text'> <span className='text-sm '><FaCheck/></span> Task time in menubar</li>
-                <li className='flex flex-wrap gap-2 items-center rounded-lg px-3 py-1 text-sm text-[#713f12] font-bold  bg-[#fff6cc] border border-yellow text'> <span className='text-sm '><FaCheck/></span> Notification count in the dock</li>
-                <li className='flex flex-wrap gap-2 items-center rounded-lg px-3 py-1 text-sm text-[#713f12] font-bold  bg-[#fff6cc] border border-yellow text'> <span className='text-sm '><FaCheck/></span> Global hotkey to create task</li> */}
+
             </ul>
           )}
           <p className={`text-lg opacity-65 ${(!fontColor) && 'text-white opacity-80'}`}>{description}</p>
@@ -90,8 +85,8 @@ function CustomerStories({
         </div>
 
 {bgImage && 
-        <div className={`${imageClass} relative  `}>
-          <img className={`${fontColor ? 'lg:max-w-lg' :  'object-center lg:max-w-[100%] xl:max-w-2xl h-full' } `} src={bgImage} alt="" />
+        <div className={`${imageClass} relative border-4 border-secondary `}>
+          <img className={`${fontColor ? 'lg:max-w-lg' : 'object-center lg:max-w-[100%] xl:max-w-2xl h-full' } `} src={bgImage} alt="" />
         </div>
 }
       </div>

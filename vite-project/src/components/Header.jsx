@@ -11,7 +11,7 @@ console.log(toggleDarkMode, isDarkMode)
   return (
   //------------------------------------------------------------ Header for normal screen -------------------------------------------------
     <header className={`flex justify-between items-center px-6 py-3 relative bg-[#f1f1f7] ${isDarkMode ? 'bg-primary text-white ' : 'bg-white text-primary'}`}>
-    {/* <button className="border-2 p-2 rounded-lg" onClick={toggleDarkMode}>{isDarkMode ? "Dark Mode" : "Normal Mode"}</button> */}
+    <button className="border-2 p-2 rounded-lg" onClick={toggleDarkMode}>{isDarkMode ? "Dark Mode" : "Normal Mode"}</button>
     <div className="flex items-center gap-2 z-30 lg:flex-1" >
         <img className="w-12 h-12 object-cover lg:w-12 lg:h-12" src={logo} alt="Logo" />
         <p className="sm:text-xl lg:text-lg font-semibold">ToDesktop</p>
