@@ -6,6 +6,7 @@ import AppsPoweredByToDesktop from './pages/AppsPoweredByToDesktop';
 import HowItWorksScreen from './pages/HowItWorksScreen';
 import CustomerScreen from './pages/CustomerScreen';
 import PricePlanScreen from './pages/PricePlanScreen';
+import Accordion from './components/Accordion';
 
 function App() {
   
@@ -26,6 +27,8 @@ return (
 <CustomerScreen/>
 
 <PricePlanScreen/>
+
+<Accordion/>
 </main>
 
 </div>

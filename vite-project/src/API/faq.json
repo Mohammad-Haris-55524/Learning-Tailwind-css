@@ -1,0 +1,83 @@
+[
+    {
+        "id": "1",
+        "question": "Is ToDesktop For Me?",
+        "answer": "That depends! If you would like to distribute your web app to your users as a downloadable desktop app then ToDesktop is for you. If you want to make a desktop app of a website for your personal use, ToDesktop is overkill. What’s the difference? There are extra considerations when creating a desktop app for distribution to customers. Here are the top 3:\n\nInstaller — Mac users expect a “drag to applications” DMG file. Windows users expect an installer and they also expect to be able to uninstall it from the control panel.\n\nCode Signing — By default Windows Authenticode and Apple Gatekeeper will stop your desktop app opening. Signing your code allows your app to open without issues.\n\nAuto-update — There is a web browser running “underneath” your desktop app. It’s important to keep this updated for two reasons.\n\n1. Security issues + vulnerabilities can occur. Auto-update ensures that they stay patched over time.\n\n2. You don’t want to be stuck supporting an old web browser in 5 years from now. This can happen if your desktop app’s underlying web browser hasn’t updated.\n\nToDesktop offers these features as standard! Saving you a ton of development time and effort."
+    },
+
+
+    {
+        "id": "2",
+        "question": "Can I try ToDesktop without buying?",
+        "answer": "Yes. You can get started by downloading ToDesktop Builder at no cost. After installing it, you can build your desktop application and preview it by clicking the “Run” button. This allows you to test the app on your own computer to ensure it performs to your expectations.\n\nIf you’re using a Mac and wish to add the app to your “Applications” folder for easier access, simply follow these steps:\n\n1. Right-click on the app’s dock icon while it’s running.\n2. Select “Options” and then “Show in Finder.”\n3. Drag the application into your Applications directory, allowing you to use it just like any other installed app.\n\nShould you decide to distribute your application to a wider audience—complete with code signing and a native installer—you’ll need to purchase a subscription."
+    },
+
+    
+    {
+        "id": "3",
+        "question": " Do you collect or store data about my customers?",
+        "answer": "No. When a ToDesktop app opens it contacts the our servers to check if an update is available. We do not collect or store any user data from these requests."
+    },
+
+    {
+        "id": "4",
+        "question": "Does ToDesktop work with sites built with ___?",
+        "answer": "Wordpress? Yes.\nSquarespace? Yup.\nWix? Of course.\nShopify? Definitely.\nReact? You bet.\nVue? Affirmative.\nPHP? 100%.\nGo? Absolutely."
+    },
+
+    {
+        "id": "5",
+        "question": "What features are on the product roadmap?",
+        "answer": "If you have any suggestions, we’d love to hear! Please send us an email at support@todesktop.com or send us a message"
+    },
+
+    {
+        "id": "6",
+        "question": "How does ToDesktop work under the hood?",
+        "answer": "It can help to think of ToDesktop as a custom web browser dedicated to your web app or website. It shows a live version of your site or web app at all times, just like a web browser. There is no toolbar or address bar or refresh buttons but it behaves and functions just like a web browser. This means you don’t need to do anything to your existing site, it will just work. If your site works in Google Chrome then it is compatible with ToDesktop.\n\nToDesktop uses a technology called Electron. You don’t need Electron (or even coding) experience to create a desktop app with ToDesktop. Rest assured, the underlying “browser” engine is updated regularly through auto-updates. So the desktop version of your app will always have the latest web features available."
+    },
+
+    {
+        "id": "7",
+        "question": "Will my app work offline?",
+        "answer": "Think of ToDesktop as a normal browser that is just for your website. Your website will work exactly as it does in Chrome, or any other browser.\n\nIf you want to make the app work offline you’ll need to make it into a progressive web app. Include a web manifest, service workers and client-side storage and voila — offline support.\n\nLearn more on MDN."
+    },
+    
+    {
+        "id": "8",
+        "question": "Which version of Electron/Chromium is used?",
+        "answer": "ToDesktop is currently based on Chromium 118 and Electron 27. When Electron releases a new version you can expect us to update it shortly after. We prioritize security fixes and endeavour to release them as soon as possible. All updates are pushed out to all your users over auto-update.\n\nYou can learn more about this here."
+    },
+    
+
+    {
+        "id": "9",
+        "question": "What support do you offer?",
+        "answer": "We’ll do our best to help you with any issue you encounter with ToDesktop. You can get in touch with us via email and chat.\n\nOn the Startup plan we deal with the same day or the next day.\n\nOn the Business plan you get concierge onboarding. This is a video/phone onboarding session where we take you through the product and make sure you’re happy set up. You also get priority support with your issues answered first. You can also schedule a phone/video support session if necessary.\n\nYou can email us at support@todesktop.com or chat with us."
+    },
+    
+
+
+    {
+        "id": "10",
+        "question": "How does my app get updated?",
+        "answer": "Every time your app launches it contacts the ToDesktop update server. If there is a newer version available then it gets downloaded automatically. The user gets a notification that the new version will be installed the next time that they open the app.\n\nAuto-updates are published on two occasions:\n\n1. An app detail (name, icon, default window dimensions) is changed.\n2. Electron or the ToDesktop standard library is updated."
+    },
+
+    {
+        "id": "11",
+        "question": "I want to use ToDesktop to convert multiple web apps, is there a bulk discount available?",
+        "answer": "Yes, let us know your needs. Please send us an email at support@todesktop.com or send us a message."
+    }
+    
+
+
+    
+    
+    
+    
+
+    
+
+
+]
