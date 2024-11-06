@@ -15,11 +15,13 @@ function CardsOfCustomerStories({
   pricePlan,
   featuresTitle,
   pricing,
+  fontClass,
+  btnColor
 }) {
 
   return (
-    <div className="flex flex-col justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] py-4 px-8 lg:p-10 bg-[#f7f4f4] mb-4">
-      <div className="flex lg:flex-col items-end lg:items-start gap-x-4">
+    <div className="flex flex-col justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] py-4 px-8 lg:p-10 bg-[#fafafc] mb-8 lg:mb-4">
+      <div className="flex lg:flex-col items-end lg:items-start gap-x-4 ">
         {customerStoriesSection && (
           <div
             style={{ backgroundColor: `${iconBgColorCode}` }}
@@ -28,18 +30,20 @@ function CardsOfCustomerStories({
             <IoCodeSlashOutline />
           </div>
         )}
-        <h1 className="mt-4 text-2xl font-semibold">{title}</h1>
+        <div className="">
+        <h1 className={`mt-4 ${fontClass ? 'text-2xl' : 'text-4xl lg:text-2xl'} text-2xl font-semibold`}>{title}</h1>
         {pricePlan && (
           <div>
             {" "}
-            <p className="text-lg opacity-60 mt-3 "> {description} </p>
+            <p className="text-lg opacity-60 mt-3  "> {description} </p>
             {pricing && (
               <p className="text-lg mt-6">
-                <span className="font-bold text-2xl">{pricing}</span>/month
+                <span className="font-bold text-2xl ">{pricing}</span>/month
               </p>
             )}
           </div>
         )}
+        </div>
       </div>
 
       {customerStoriesSection && (
@@ -103,8 +107,9 @@ function CardsOfCustomerStories({
             </ul>
           </div>
 
-          <div className=" ">
-            <button className="w-full px-8 py-3 border border-[#cbcbe2] font-semibold rounded-lg shadow-md text-secondary text-lg hover:border-[#acacc0]">
+          <div className="">
+            <button className={`w-full px-8 py-3 border border-[#cbcbe2] font-semibold rounded-lg shadow-md text-secondary text-lg
+             hover:border-[#acacc0] ${btnColor && 'bg-secondary text-white'}`}>
               Get Started
             </button>
           </div>

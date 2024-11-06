@@ -11,13 +11,13 @@ console.log(moveBoxRightToLeft)
 
 return (
   <section >
-<div className='flex justify-between w-full'>
+{/* <div className='flex justify-between w-full'>
   <div>
   <h1 className='font-bold text-5xl'>Choose a plan that fits your needs</h1> 
   </div>
   {/* px-4 py-4 hover:border-2 transition */} 
   {/* px-12 py-4 border-2 */}
-  <div className='border-2 flex justify-between items-center rounded-lg w-[28%] px-12 py-4 '>
+  {/* <div className='border-2 flex justify-between items-center rounded-lg w-[28%] px-12 py-4 '>
     <div className='relative' >
     <button className='z-50' onClick={()=>setMoveBoxLeftToRight(!moveBoxLeftToRight)}>Monthly
     <div className={`border-4 border-secondary z-10 ${moveBoxLeftToRight ? "class1" : "class2"} transition rounded-lg absolute top-0
@@ -36,14 +36,14 @@ return (
     </div>
 
     </div>
-</div>
+</div> */}
 
-</div>  
+{/* </div>   */}
 
-   <div className=' lg:flex justify-between '>
+   <div className='lg:flex justify-between '>
      
     <CardsOfCustomerStories title={'Free'} description={"For personal use or testing your app before deploying to customers."}
-    customerStoriesSection = {false} pricePlan={true} featuresTitle={"Key Features"} 
+    customerStoriesSection = {false} pricePlan={true} featuresTitle={"Key Features"} fontClass={false}
     features = {[
     "Free for personal use",
     "Run app locally",
@@ -52,7 +52,7 @@ return (
     ]}
   />
    <CardsOfCustomerStories title={'Essential'} description={"For simple desktop apps."}
-    customerStoriesSection = {false} pricePlan={true} featuresTitle={"Key Features"} pricing="$100"
+    customerStoriesSection = {false} pricePlan={true} featuresTitle={"Key Features"} pricing="$100"  fontClass={false}
     features = {[
     "Windows, Mac & Linux",
     "Code Signing",
@@ -62,6 +62,7 @@ return (
   />
      <CardsOfCustomerStories title={'Professional'} description={"For sophisticated desktop apps."}
     customerStoriesSection = {false} pricePlan={true} featuresTitle={"Everything in Essential Plus"} pricing="$250"
+    fontClass={false} btnColor = {true}
     features = {[
     "Branded Download links",
     "Analytics",

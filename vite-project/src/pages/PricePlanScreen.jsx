@@ -6,7 +6,7 @@ import Enterprise from '../components/Enterprise';
 function PricePlanScreen() {
   return (
   <>
-  {/* <PricePlanPage01 /> */}
+  <PricePlanPage01 />
   <Enterprise/>
   </>
     

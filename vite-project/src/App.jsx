@@ -7,6 +7,9 @@ import HowItWorksScreen from './pages/HowItWorksScreen';
 import CustomerScreen from './pages/CustomerScreen';
 import PricePlanScreen from './pages/PricePlanScreen';
 import Accordion from './components/Accordion';
+import Footer from './components/Footer';
+import DownloadProgressBar from './components/DownloadProgressBar';
+
 
 function App() {
   
@@ -20,7 +23,7 @@ return (
 
 <AppsPoweredByToDesktop toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
 
-<main className="px-6 sm:px-6 lg:px-8 xl:px-8 mb-12 border-4">
+<main className="px-6 sm:px-6 lg:px-8 xl:px-8 mb-12 ">
 
 <HowItWorksScreen/>
 
@@ -30,6 +33,11 @@ return (
 
 <Accordion/>
 </main>
+
+<footer className='px-6 sm:px-6 lg:px-8 xl:px-8'>
+  <Footer/>
+  {/* <DownloadProgressBar/> */}
+</footer>
 
 </div>
   )

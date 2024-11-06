@@ -20,15 +20,17 @@ function CustomerStories({
   conditionalClass,
   bgColor,
   fontColor,
-  imageClass
+  imageClass,
+  border
+
 }) {
   console.log(bgColor);
   return (
     <>
-      <div className={`lg:flex justify-between rounded-xl max-w-full border border-gray pt-8 sm:pt-2 lg:pt-5 h-max overflow-hidden 
+      <div className={`lg:flex justify-between ${border && 'rounded-[1.65rem]'} rounded-xl max-w-full border border-gray pt-8 sm:pt-2 lg:pt-5 h-max overflow-hidden 
         ${
           bgColor === "bg-color-grey-class"
-            ? "bg-[#faf2f2]"
+            ? "bg-[#fafafc]"
             : "bg-[#000000]"
         }`}>
         <div className="px-7 sm:p-8 lg:px-12 lg:max-w-2xl">
@@ -85,7 +87,7 @@ function CustomerStories({
         </div>
 
 {bgImage && 
-        <div className={`${imageClass} relative border-4 border-secondary `}>
+        <div className={`${imageClass} relative `}>
           <img className={`${fontColor ? 'lg:max-w-lg' : 'object-center lg:max-w-[100%] xl:max-w-2xl h-full' } `} src={bgImage} alt="" />
         </div>
 }
