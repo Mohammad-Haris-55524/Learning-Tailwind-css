@@ -32,7 +32,7 @@ function Enterprise() {
         </div>
       </div>
       {/* flex-col */}
-        <div className="lg:w-[38%] xl:w-[33%] flex justify-center lg:justify-between items-center gap-20 bg-white px-14 py-6 sm:px-20 sm:py-8 lg:px-10  xl:px-14  mt-6 lg:-mt-4 lg:-mr-3 border-4 border-secondary rounded-xl">
+        <div className="lg:w-[38%] xl:w-[33%] flex justify-center lg:justify-between items-center gap-20 bg-white px-14 py-6 sm:px-20 sm:py-8 lg:px-10  xl:px-14  mt-6 lg:-mt-4 lg:-mr-3 rounded-xl">
           <div className="w-full sm:w-[68%] md:w-[62%] lg:w-full">
           <div>
           <p className="opacity-50 font-semibold text-md text-center mb-4 lg:mb-3 xl:mb-6">
