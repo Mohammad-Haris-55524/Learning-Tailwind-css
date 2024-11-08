@@ -14,11 +14,14 @@ function CardsOfCustomerStories({
   features,
   pricePlan,
   featuresTitle,
-  pricing,
   fontClass,
-  btnColor
+  btnColor,
+  // pricingEssential,
+  // pricingProfessional,
+  pricing
 }) {
 
+  // console.log({pricingEssential}, {pricingProfessional})
   return (
     <div className="flex flex-col justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] py-4 px-8 lg:p-10 bg-[#fafafc] mb-8 lg:mb-4">
       <div className="flex lg:flex-col items-end lg:items-start gap-x-4 ">
@@ -36,9 +39,12 @@ function CardsOfCustomerStories({
           <div>
             {" "}
             <p className="text-lg opacity-60 mt-3  "> {description} </p>
+            {/* {(pricingEssential || pricingProfessional)   ( */}
             {pricing && (
               <p className="text-lg mt-6">
                 <span className="font-bold text-2xl ">{pricing}</span>/month
+
+                
               </p>
             )}
           </div>
