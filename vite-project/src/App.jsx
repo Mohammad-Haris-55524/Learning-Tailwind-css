@@ -9,6 +9,7 @@ import PricePlanScreen from './pages/PricePlanScreen';
 import Accordion from './components/Accordion';
 import Footer from './components/Footer';
 import DownloadProgressBar from './components/DownloadProgressBar';
+import BentoGrid from './components/BentoGrid';
 
 
 function App() {
@@ -27,8 +28,8 @@ return (
 
 <HowItWorksScreen/>
 
+<BentoGrid/>
 <CustomerScreen/>
-
 <PricePlanScreen/>
 
 <Accordion/>

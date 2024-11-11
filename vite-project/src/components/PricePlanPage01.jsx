@@ -25,7 +25,7 @@ const handlerRight = () =>{
   setMoveBoxLeftToRight(true)
   setmoveBoxRightToLeft(false)
   setmonthlyPriceEssential('$100')
-setmonthlyPriceProfessional('$240')
+  setmonthlyPriceProfessional('$240')
 
 }
 
@@ -40,7 +40,7 @@ return (
   <div className="flex justify-between items-center rounded-lg w-[23rem] sm:w-[25rem] md:w-[25rem] lg:max-w-[35%] xl:max-w-[30%] relative
    bg-[#FBFBFD] mt-12 border border-gray">
     <div
-      className={`absolute ${moveBoxRightToLeft && "-translate-x-[0%]"} left-[3px] top-[3px] h-[calc(100%-6px)] w-[calc(50%-3px)] 
+      className={`absolute ${moveBoxRightToLeft && "translate-x-[0%]"} left-[3px] top-[3px] h-[calc(100%-6px)] w-[calc(50%-3px)] 
       rounded-lg bg-[#ffffff] shadow-md transition-transform duration-300 ease-in-out translate-x-full`}
     ></div>
 
