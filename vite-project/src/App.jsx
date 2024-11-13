@@ -24,7 +24,7 @@ return (
 
 <AppsPoweredByToDesktop toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode}/>
 
-<main className="px-6 sm:px-6 lg:px-8 xl:px-8 mb-12 ">
+<main className="px-6 sm:px-6 lg:px-8 xl:px-8 mb-12 border-4 ">
 
 <HowItWorksScreen/>
 

@@ -37,7 +37,13 @@
         @apply -translate-x-12
         /* @apply scale-95 */
     }
+
+    .bg-gradient-color{
+        @apply bg-gradient-to-br from-custom-gray-50 to-custom-gray-100
+        }
+
+        .bg-gradient-color:hover {
+            @apply from-theme-red-light via-theme-purple-light to-theme-yellow-light;
+          }
 }
 
-/* lg:self-end */
-/* absolute left-24 top-10   */
