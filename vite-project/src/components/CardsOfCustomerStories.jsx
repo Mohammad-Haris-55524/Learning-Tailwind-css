@@ -16,6 +16,7 @@ function CardsOfCustomerStories({
   featuresTitle,
   fontClass,
   btnColor,
+  pricePlanButton,
   // pricingEssential,
   // pricingProfessional,
   pricing
@@ -23,7 +24,9 @@ function CardsOfCustomerStories({
 
   // console.log({pricingEssential}, {pricingProfessional})
   return (
-    <div className="flex flex-col justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] py-4 px-8 lg:p-10 bg-[#fafafc] mb-8 lg:mb-4">
+    <div className="flex flex-col relative justify-between border border-gray rounded-2xl w-full lg:w-[32.2%] py-4 px-8 lg:p-10 bg-[#fafafc] mb-8 lg:mb-4">
+    {pricePlanButton && <span className="text-secondary text-sm font-bold rounded-2xl w-max px-4 py-[0.40rem] bg-[#d5ddff] 
+          absolute right-[8%] -top-[3.5%]">{pricePlanButton}</span>}
       <div className="flex lg:flex-col items-end lg:items-start gap-x-4 ">
         {customerStoriesSection && (
           <div
@@ -91,7 +94,7 @@ function CardsOfCustomerStories({
       )}
 
       {pricePlan && (
-        <div className="flex flex-col justify-between">
+        <div className="flex flex-col justify-between relative">
           <div className="mt-6 mb-8 lg:mt-8">
             <h3 className="text-md xl:text-lg font-bold uppercase opacity-60">
               {featuresTitle}
