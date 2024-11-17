@@ -91,11 +91,11 @@ function AnimationSlider({toggleDarkMode, isDarkMode}) {
     <section className={`max-h-fit bg-[#F2F0FF] ${isDarkMode ? 'bg-primary text-white ' : 'bg-white text-primary'}`} // Add overflow-y-scroll to make it scrollable
     ref={sectionRef}>
         
-      <div className="overflow-x-hidden mt-8">
-        <div className="flex justify-center items-center gap-4">
-        <span><img className="w-6 h-6 sm:w-8 sm:h-8 mt-4 " src={myImage} alt="pointer-image" /></span>
-        <p className="text-lg sm:text-xl font-semibold uppercase">Apps powered by ToDesktop </p>
-        <span className="-scale-x-90"><img className="w-6 h-6 sm:w-8 sm:h-8 mt-4" src={myImage} alt="pointer-image" /></span>
+      <div className="overflow-x-hidden">
+        <div className="flex justify-center items-center gap-4 mt-8">
+        <span><img className="w-6 h-6 sm:w-6 sm:h-6 mt-4 " src={myImage} alt="pointer-image" /></span>
+        <p className="text-md sm:text-md font-semibold uppercase">Apps powered by ToDesktop </p>
+        <span className="-scale-x-90"><img className="w-6 h-6 sm:w-8 sm:h-6 mt-6" src={myImage} alt="pointer-image" /></span>
         </div>
 
         {/* Row # 01 */}

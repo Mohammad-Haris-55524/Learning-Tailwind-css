@@ -3,12 +3,12 @@ import { FaFileCode } from "react-icons/fa6";
 import { TfiHandDrag } from "react-icons/tfi";
 import { FaRegWindowRestore } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
-import fixedImage from '../assets/fixedIcon.svg'
+import fixedImage from '../assets/whiteIcon.svg'
 
 
 function Home({toggleDarkMode, isDarkMode}) {
   return (
-    <section className={`bg-[#F2F0FF] ${isDarkMode ? 'bg-primary text-white ' : 'bg-white text-primary'} border relative`}> 
+    <section className={`bg-[#F2F0FF] ${isDarkMode ? 'bg-primary text-white ' : 'bg-white text-primary'} relative`}> 
     {/* HERO CONTAINER */}
     <div className='p-6 sm:flex flex-col max-w-4xl mx-auto items-center sm:p-10'>
     
@@ -46,9 +46,8 @@ function Home({toggleDarkMode, isDarkMode}) {
         <div><button className='w-full px-8 py-3 border border-[#cbcbe2] font-semibold rounded-lg shadow-md text-lg hover:border-[#acacc0]'>Read docs</button></div>
         </div>
         </div>
-        <div className='w-12 h-12 rounded-full bg-[#3238f2] flex justify-center items-center fixed bottom-5 right-5
-        '>
-    <img className='w-6 h-6 object-contain fill-current brightness-200 contrast-200 text-white ' src={fixedImage} alt="" />
+        <div className='w-12 h-12 rounded-full bg-[#3238f2] flex justify-center items-center fixed bottom-5 right-5 z-50'>
+        <img className='w-6 h-6 object-contain fill-current brightness-200 contrast-200 text-white ' src={fixedImage} alt="" />
 
         </div>
     </section>

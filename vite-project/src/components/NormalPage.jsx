@@ -85,10 +85,15 @@ function NormalPage() {
             transform: `translateY(${translateYDiv}px)`,
             transition: 'transform 2s ease', // Smooth movement for the last div
           }}
-         className='bg-primary inline-flex justify-end items-center gap-4 rounded-xl shadow-md  shadow-secondary hover:shadow-2xl hover:shadow-secondary
-         text-white text-lg font-bold px-6 py-3 z-10 absolute top-[50%] translate-x-[-50%] translate-y-[-50%]'>
-          <span><FaCirclePlay /></span> Watch: Build a desktop app in 90 secs</div>
+         className='bg-secondary inline-flex justify-end items-center gap-4 rounded-xl shadow-md  shadow-secondary hover:shadow-2xl hover:shadow-secondary
+         text-white text-lg font-bold  px-[4%] py-[3%] lg:px-6 lg:py-3 z-10 absolute top-[50%] translate-x-[-50%] translate-y-[-50%]'>
+          <span className='text-sm lg:text-lg'><FaCirclePlay /></span>
+          <span className='hidden lg:inline-flex'>Watch: Build a desktop app in 90 secs</span>
+          <span className='inline-flex lg:hidden text-sm'>Build desktop app in 90 s</span>
+        </div>
+
       </div>
+
     </section>
   );
 }

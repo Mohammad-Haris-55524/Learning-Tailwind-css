@@ -65,8 +65,8 @@ function BentoGrid() {
   return (
     <section className='mb-32'>
     <div className='mt-40'>
-    <div className='w-[30rem]'>
-        <h1 className='text-5xl font-bold mb-10 leading-snug'>ToDesktop handles the details</h1>
+    <div className='sm:w-[30rem]'>
+        <h1 className='text-4xl sm:text-5xl font-bold mb-10 leading-snug'>ToDesktop handles the details</h1>
     </div>
     
       <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 h-fit'>

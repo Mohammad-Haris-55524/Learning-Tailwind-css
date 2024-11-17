@@ -38,12 +38,12 @@ const handlerRight = () =>{
 
 return (
 <section>
-<div className="lg:flex justify-between items-center w-full mb-20 mt-32">
+<div className="lg:flex justify-between items-center w-[100%] sm:w-full mb-20 mt-32 border-4">
   <div className="w-full md:w-[35rem] shrink-0 lg:w-[38rem] xl:w-[40%] ">
     <h1 className="font-bold text-5xl leading-snug">Choose a plan that fits your needs</h1>
   </div>
   
-  <div className="flex justify-around items-center rounded-lg w-[23rem] sm:w-[25rem] md:w-[25rem] lg:max-w-[35%] xl:max-w-[30%] relative
+  <div className="flex justify-around items-center rounded-lg max-w-[100%] sm:w-[25rem] md:w-[25rem] lg:max-w-[35%] xl:max-w-[30%] relative
    bg-[#FBFBFD] mt-12 border border-gray">
     <div
       className={`absolute ${moveBoxRightToLeft ? "translate-x-[0%]" : 'translate-x-full'} left-[3px] top-[3px] h-[calc(100%-6px)] w-[calc(50%-3px)] 
@@ -56,7 +56,7 @@ return (
     <button className="z-10 px-[10.5%] sm:px-[10.5%] py-3 flex-shrink-0"  onClick={handlerRight}>
       <div className='flex justify-between items-center gap-2 '>
       <div>Yearly</div>
-      <div className='text-secondary text-sm font-bold rounded-2xl w-max px-3 py-[0.35rem] bg-[#d5ddff]'>-20%</div>
+      <div className='text-secondary text-sm font-bold rounded-2xl w-max px-[5%] py-[5%] sm:px-3 sm:py-[0.35rem] bg-[#d5ddff]'>-20%</div>
       </div>
     </button>
   </div>
